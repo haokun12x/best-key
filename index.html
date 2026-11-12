@@ -124,6 +124,32 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .specs dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
 .specs dd{font-size:15px;margin-top:2px}
 
+
+/* knob module */
+.mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+@media(max-width:900px){.mod-grid{grid-template-columns:1fr}}
+.mod-tabs{display:flex;gap:6px;margin:18px 0 14px}
+.mod-tabs button{font:400 11px var(--mono);letter-spacing:.12em;background:none;color:var(--dim);border:1px solid var(--line);padding:6px 12px;border-radius:20px;cursor:pointer}
+.mod-tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.mod-view{position:relative;border:1px solid var(--line);border-radius:10px;background:var(--bg2);overflow:hidden}
+.mod-view>div{display:none}.mod-view>div.on{display:block}
+.mod-view svg{display:block;width:100%;height:auto}
+.mod-view .cu{background:#0a0c0b;padding:18px}
+.mod-view .cu img{width:100%;display:block;filter:grayscale(1) invert(1) sepia(.7) brightness(.75) contrast(1.15)}
+.mod-view.sec{margin-top:58px}
+.legend{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;margin-top:16px;font-size:12px;color:var(--dim)}
+.legend li{display:flex;gap:8px;align-items:center;cursor:default}
+.legend i{width:10px;height:10px;border-radius:2px;flex:none}
+.legend li:hover{color:var(--ink)}
+.press-ctl{display:flex;align-items:center;gap:16px;margin-top:14px;flex-wrap:wrap}
+#pressBtn{font:400 11px var(--mono);letter-spacing:.12em;background:none;color:var(--ink);border:1px solid var(--ink);padding:8px 16px;border-radius:20px;cursor:pointer;user-select:none;touch-action:none}
+#pressBtn.on{background:var(--gold);border-color:var(--gold);color:#111}
+.steps{margin:24px 0 0 18px;font-size:13px;color:var(--dim)}
+.steps li{padding:5px 0 5px 4px}
+#ffc svg{width:100%;height:auto;display:block}
+#ffc .pin{cursor:default}
+#ffc .pin:hover rect{stroke:var(--gold)}
+
 /* pcb */
 .pcb-tabs{display:flex;gap:0;border:1px solid var(--line);width:max-content;border-radius:24px;overflow:hidden;margin-bottom:26px;max-width:100%;overflow-x:auto}
 .pcb-tabs button{font:400 11px var(--mono);letter-spacing:.14em;background:none;border:none;color:var(--dim);padding:9px 16px;cursor:pointer;white-space:nowrap}
@@ -166,7 +192,7 @@ footer{padding:80px 0 60px;border-top:1px solid var(--line);font-size:12px;color
 <body>
 <nav><div class="wrap">
   <span class="brand">BK46</span>
-  <div class="links"><a href="#stack">叠层</a><a href="#sense">感应</a><a href="#knob">旋钮</a><a href="#pcb">电路板</a><a href="#case">外壳</a><a href="#status">状态</a></div>
+  <div class="links"><a href="#stack">叠层</a><a href="#sense">感应</a><a href="#knob">旋钮</a><a href="#module">模块</a><a href="#pcb">电路板</a><a href="#case">外壳</a><a href="#status">状态</a></div>
   <button id="theme" aria-label="切换明暗">◐</button>
 </div></nav>
 
@@ -251,8 +277,49 @@ footer{padding:80px 0 60px;border-top:1px solid var(--line);font-size:12px;color
   </div>
 </div></section>
 
+<section id="module"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">04 / MODULE</div><div>
+    <h2>旋钮模块<br><em>小板、装配与互联</em></h2>
+    <p>每个旋钮是一个独立模块：0.6 mm 双层小板上装电机、角度编码器、下压传感器和三相驱动，用一条 14 芯排线接到主板。小板中央的电机座是一个由柔性梁悬挂的小岛，按下旋钮时会下沉几十微米，由此检测下压。</p>
+  </div></div>
+
+  <div class="mod-grid">
+    <div class="reveal">
+      <span class="tag">A · 小板俯视（按实际比例）</span>
+      <div class="mod-tabs" id="kbTabs"><button data-v="diag" class="on">结构</button><button data-v="cu">实际铜层</button></div>
+      <div class="mod-view" id="kbView">
+        <div data-v="diag" class="on" id="flex"></div>
+        <div data-v="cu" class="cu"><img src="pcb/knob/L/fab/plot_copper.svg" alt="左旋钮小板铜层" loading="lazy"></div>
+      </div>
+      <ul class="legend" id="flexLegend"></ul>
+    </div>
+    <div class="reveal">
+      <span class="tag">B · 剖面与装配（Z 向按实际比例）</span>
+      <div class="mod-view sec" id="section"></div>
+      <div class="press-ctl">
+        <button id="pressBtn">按住下压</button>
+        <span class="readout" id="pressRead">下沉 0.000 mm · 磁场变化 0.00 mT</span>
+      </div>
+      <ol class="steps">
+        <li>电机垫片夹在小板与电机之间，4 颗 M2×4 从小板背面拧进电机底座；径向磁铁粘在轴底</li>
+        <li>Ø3×0.5 轴向磁铁粘进底壳轴心孔，与底面齐平</li>
+        <li>模块放上底壳的 0.4 mm 凸台，四角 4 颗、尾部 1 颗 M2 自攻螺丝固定</li>
+        <li>排线从主板连接器向下折 180°，插入正下方的小板连接器</li>
+        <li>旋钮芯用 2 颗 M2 拧在转子上，压上旋钮帽</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top:96px">
+    <span class="tag">C · 与主板的互联</span>
+    <div class="mod-tabs" id="sideTabs" style="margin-top:18px"><button data-s="L" class="on">左旋钮</button><button data-s="R">右旋钮（镜像）</button></div>
+    <div id="ffc"></div>
+    <p class="small" style="margin-top:18px">14P 0.5 mm 同向 FFC，约 30 mm。三相 PWM 走主板 nRF52840 直接输出，编码器的 CLK / DO 两个旋钮共用，各自片选。电源 VM 来自 VSYS，由主板上的 P-MOS（P0.19，低有效）整路开关，旋钮不用时完全断电。</p>
+  </div>
+</div></section>
+
 <section id="pcb"><div class="wrap">
-  <div class="sec-head reveal"><div class="sec-num">04 / COPPER</div><div>
+  <div class="sec-head reveal"><div class="sec-num">05 / COPPER</div><div>
     <h2>四层主板<br><em>布线全部由脚本完成</em></h2>
     <p>主板由脚本生成元件布局，先用自写的布线器布线，剩下的几条线再用拆线重布补完。下面是 KiCad 导出的四层铜，可切换单层或叠加查看。</p>
   </div></div>
@@ -276,7 +343,7 @@ footer{padding:80px 0 60px;border-top:1px solid var(--line);font-size:12px;color
 </div></section>
 
 <section id="case"><div class="wrap">
-  <div class="sec-head reveal"><div class="sec-num">05 / ENCLOSURE</div><div>
+  <div class="sec-head reveal"><div class="sec-num">06 / ENCLOSURE</div><div>
     <h2>两件式外壳<br><em>拆 8 颗螺丝就能打开</em></h2>
     <p>底壳和上框都用 CadQuery 脚本生成，并与 PCB、电机、电池、线圈、显示模块做过干涉检查，结果为零。定位板上下各贴 15 段 Poron 垫片（gasket 结构）。维修时拧下底部 8 颗螺丝，上框连同键帽可直接提起。</p>
   </div></div>
@@ -289,7 +356,7 @@ footer{padding:80px 0 60px;border-top:1px solid var(--line);font-size:12px;color
 </div></section>
 
 <section id="status"><div class="wrap">
-  <div class="sec-head reveal"><div class="sec-num">06 / STATUS</div><div>
+  <div class="sec-head reveal"><div class="sec-num">07 / STATUS</div><div>
     <h2>当前进度<br><em>和尚待验证的部分</em></h2>
     <p>制作文件已经齐全，但还没有打样。打样前请先看第三列的风险。</p>
   </div></div>
@@ -441,6 +508,117 @@ $$('.reveal').forEach(e=>io.observe(e));
 // pcb tabs
 $$('#pcbTabs button').forEach(b=>b.onclick=()=>{$$('#pcbTabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
  $$('#pcbView img').forEach(i=>{i.classList.remove('on','stacked');if(b.dataset.l==='all')i.classList.add('stacked');else if(i.dataset.l===b.dataset.l)i.classList.add('on')})});
+
+// ---------- knob module ----------
+(()=>{
+ const GC={pwr:'var(--gold)',gnd:'var(--dim)',pwm:'#c9785a',sen:'#5fa59a',spi:'#8a8fd0'};
+ // A: flexure top view, mm, axis at 0,0, y up = towards the back wall
+ const S=12,X0=-12.5,Y0=12.5,mx=x=>(x-X0)*S,my=y=>(Y0-y)*S;
+ const W=(40.5-X0)*S,H=(Y0+12.5)*S;
+ const R=(x0,y0,x1,y1,a)=>`<rect x="${mx(Math.min(x0,x1))}" y="${my(Math.max(y0,y1))}" width="${Math.abs(x1-x0)*S}" height="${Math.abs(y1-y0)*S}" ${a}/>`;
+ const items={
+  frame:{c:'#2d5a47',t:'FR4 0.6 mm 小板'},
+  island:{c:'#3c7a5e',t:'电机座小岛 13 mm'},
+  beam:{c:'#6fae8c',t:'柔性梁 2 mm（四边）'},
+  bridge:{c:'#9fd1b4',t:'连接桥 3 mm'},
+  mt:{c:'var(--gold)',t:'MT6701 角度编码器（正面）'},
+  hall:{c:GC.sen,t:'下压霍尔传感器（背面）'},
+  drv:{c:GC.pwm,t:'STSPIN233 三相驱动'},
+  ffc:{c:GC.spi,t:'14P FFC 连接器'},
+  screw:{c:'var(--ink)',t:'M2 固定螺丝 ×5'},
+  motor:{c:'var(--faint)',t:'电机安装孔 4×M2 / 外径 Ø18.9'}};
+ let g='';
+ // board outline: square + corner tabs + tail
+ g+=R(-9.4,-9.4,9.4,9.4,'fill="#2d5a47"');
+ [[-1,-1],[1,-1],[-1,1]].forEach(([a,b])=>g+=`<circle cx="${mx(a*9.6)}" cy="${my(b*9.6)}" r="${2.2*S}" fill="#2d5a47"/>`);
+ g+=R(8.6,6.2,16.6,12,'fill="#2d5a47"');
+ g+=R(10.2,-4.7,39,9.7,'fill="#2d5a47"');
+ g+=`<circle cx="${mx(36.9)}" cy="${my(6.1)}" r="${2.2*S}" fill="#2d5a47"/>`;
+ // slots: ring between island(6.5) and beam(7.4); leave bridges
+ const sl='fill="var(--bg2)"';
+ g+=R(-7.4,6.5,-1.5,7.4,sl)+R(1.5,6.5,7.4,7.4,sl)+R(-7.4,-7.4,-1.5,-6.5,sl)+R(1.5,-7.4,7.4,-6.5,sl);
+ g+=R(-7.4,-7.4,-6.5,-1.5,sl)+R(-7.4,1.5,-6.5,7.4,sl)+R(6.5,-7.4,7.4,-1.5,sl)+R(6.5,1.5,7.4,7.4,sl);
+ // beam highlight + bridges
+ g+=`<g class="hl" data-k="beam" fill="none" stroke="#6fae8c" stroke-width="${2*S}" opacity=".55"><rect x="${mx(-8.4)}" y="${my(8.4)}" width="${16.8*S}" height="${16.8*S}"/></g>`;
+ g+=`<g class="hl" data-k="island">${R(-6.5,-6.5,6.5,6.5,'fill="#3c7a5e"')}</g>`;
+ g+=`<g class="hl" data-k="bridge" fill="#9fd1b4">${R(-1.5,6.5,1.5,7.4,'')}${R(-1.5,-7.4,1.5,-6.5,'')}${R(-7.4,-1.5,-6.5,1.5,'')}${R(6.5,-1.5,7.4,1.5,'')}</g>`;
+ g+=`<g class="hl" data-k="motor"><circle cx="${mx(0)}" cy="${my(0)}" r="${9.45*S}" fill="none" stroke="var(--faint)" stroke-dasharray="4 4"/>${[[-4.5,-4.5],[4.5,-4.5],[-4.5,4.5],[4.5,4.5]].map(([a,b])=>`<circle cx="${mx(a)}" cy="${my(b)}" r="${1.1*S}" fill="var(--bg2)" stroke="var(--faint)"/>`).join('')}</g>`;
+ g+=`<g class="hl" data-k="hall">${R(-1.5,-0.7,1.5,0.7,`fill="none" stroke="${GC.sen}" stroke-dasharray="3 2" stroke-width="1.5"`)}</g>`;
+ g+=`<g class="hl" data-k="mt">${R(-1.5,-1.5,1.5,1.5,'fill="var(--gold)" opacity=".9"')}</g>`;
+ g+=`<g class="hl" data-k="drv">${R(18,-1,22,3,`fill="${GC.pwm}"`)}${[0,1,2].map(i=>`<circle cx="${mx(12)}" cy="${my(-2.6+i*2.6)}" r="${.8*S}" fill="none" stroke="${GC.pwm}"/>`).join('')}<text x="${mx(12)+14}" y="${my(-2.6)+4}" fill="${GC.pwm}" font-size="10">M1–M3</text></g>`;
+ g+=`<g class="hl" data-k="ffc">${R(27,-3.8,31,4.6,`fill="${GC.spi}"`)}</g>`;
+ g+=`<g class="hl" data-k="screw" fill="var(--bg2)" stroke="var(--ink)">${[[-9.6,-9.6],[9.6,-9.6],[-9.6,9.6],[14.2,9.7],[36.9,6.1]].map(([a,b])=>`<circle cx="${mx(a)}" cy="${my(b)}" r="${1*S}"/>`).join('')}</g>`;
+ g+=`<text x="${mx(-12)}" y="${H-10}" fill="var(--dim)" font-size="11" font-family="JetBrains Mono">0 ─── 10 mm</text><line x1="${mx(-12)}" x2="${mx(-2)}" y1="${H-24}" y2="${H-24}" stroke="var(--dim)"/>`;
+ $('#flex').innerHTML=`<svg viewBox="0 0 ${W} ${H}" font-family="JetBrains Mono,monospace">${g}</svg>`;
+ const leg=$('#flexLegend');
+ Object.entries(items).forEach(([k,v])=>{const li=document.createElement('li');li.innerHTML=`<i style="background:${v.c}"></i>${v.t}`;
+  li.onmouseenter=()=>$$('#flex .hl').forEach(e=>e.style.opacity=e.dataset.k===k?1:.15);
+  li.onmouseleave=()=>$$('#flex .hl').forEach(e=>e.style.opacity='');leg.appendChild(li)});
+ $$('#kbTabs button').forEach(b=>b.onclick=()=>{$$('#kbTabs button').forEach(x=>x.classList.toggle('on',x===b));$$('#kbView>div').forEach(d=>d.classList.toggle('on',d.dataset.v===b.dataset.v))});
+
+ // B: section, x = mm from axis (east), z = mm from floor
+ const s2=13,xa=-13,za=33,px=x=>(x-xa)*s2,pz=z=>(za-z)*s2,SW=(42-xa)*s2,SH=(za+1.5)*s2;
+ const B=(x0,z0,x1,z1,a)=>`<rect x="${px(x0)}" y="${pz(z1)}" width="${(x1-x0)*s2}" height="${(z1-z0)*s2}" ${a}/>`;
+ const lab=(x,z,t,c='var(--dim)',anchor='start')=>`<text x="${px(x)}" y="${pz(z)}" fill="${c}" font-size="10.5" text-anchor="${anchor}">${t}</text>`;
+ let st=B(-12.5,0,42,1.6,'fill="var(--faint)"')+lab(-12.3,0.35,'底壳 1.6');
+ st+=B(-12.5,1.6,-11,19.8,'fill="var(--faint)"');
+ st+=B(-1.5,1.1,1.5,1.6,`fill="${GC.sen}"`);
+ st+=[-9.6,9.6,36.9].map(x=>B(x-1.4,1.6,x+1.4,2.0,'fill="var(--faint)"')).join('');
+ st+=B(10.2,2.0,39,2.6,'fill="#2d5a47"')+B(-9.4,2.0,-7.4,2.6,'fill="#2d5a47"')+B(7.4,2.0,9.4,2.6,'fill="#2d5a47"');
+ st+=B(18,2.6,22,3.5,`fill="${GC.pwm}"`)+B(27,2.6,31,3.8,`fill="${GC.spi}"`);
+ // main board + plate + bezel
+ st+=B(11.1,7.2,42,8.8,'fill="var(--pcb)"')+lab(41.5,8.0,'主板 7.2–8.8','#cfe','end');
+ st+=B(27,6.2,31,7.2,`fill="${GC.spi}"`);
+ st+=`<path d="M${px(29.6)} ${pz(6.2)} C ${px(36)} ${pz(5.6)}, ${px(36)} ${pz(4.3)}, ${px(29.6)} ${pz(3.8)}" fill="none" stroke="${GC.spi}" stroke-width="2.4"/>`;
+ st+=lab(36.2,5.0,'FFC 折 180°',GC.spi);
+ st+=B(10.2,12.3,42,13.8,'fill="#a8adb0" opacity=".7"')+lab(41.5,12.7,'定位板','var(--ink)','end');
+ st+=B(10.2,15,13.2,19.8,'fill="var(--dim)" opacity=".5"')+B(-12.5,15,-10.2,19.8,'fill="var(--dim)" opacity=".5"')+lab(13.6,19.0,'上框');
+ st+=[16,35].map(x=>B(x-8.5,14.6,x+8.5,22.4,'fill="none" stroke="var(--faint)"')).join('')+lab(25.5,21.0,'键帽','var(--faint)','middle');
+ // moving group
+ let mv='<g id="mv">';
+ mv+=B(-6.5,2.0,6.5,2.6,'fill="#3c7a5e"')+B(-7.4,2.15,-6.5,2.45,'fill="#9fd1b4"')+B(6.5,2.15,7.4,2.45,'fill="#9fd1b4"');
+ mv+=B(-1.5,1.65,1.5,2.0,`fill="${GC.sen}"`)+B(-1.5,2.6,1.5,3.3,'fill="var(--gold)"');
+ mv+=B(-6.3,2.6,-2.5,4.0,'fill="var(--faint)" opacity=".8"')+B(2.5,2.6,6.3,4.0,'fill="var(--faint)" opacity=".8"');
+ mv+=B(-2,3.5,2,4.0,'fill="#b65"');
+ mv+=B(-9.45,4.0,9.45,17.5,'fill="none" stroke="var(--ink)" stroke-width="1.2"')+B(-0.75,3.6,0.75,21.5,'fill="var(--ink)" opacity=".6"');
+ for(let i=0;i<7;i++)mv+=`<line x1="${px(-9.45)}" x2="${px(9.45)}" y1="${pz(5.5+i*1.8)}" y2="${pz(5.5+i*1.8)}" stroke="var(--faint)" stroke-width=".6"/>`;
+ mv+=B(-9.3,17.8,9.3,31,'fill="var(--gold)" opacity=".18" stroke="var(--gold)"');
+ mv+=lab(0,24.5,'旋钮帽 Ø18.6','var(--gold)','middle')+lab(0,11,'1404 电机','var(--ink)','middle')+lab(0,9.3,'Ø18.9 × 13.5','var(--dim)','middle');
+ mv+='</g>';
+ st+=mv;
+ st+=`<line x1="${px(-12)}" x2="${px(-3)}" y1="${pz(3)}" y2="${pz(3)}" stroke="var(--faint)" stroke-width=".6"/>`+lab(-12.3,3.25,'MT6701','var(--gold)');
+ st+=lab(-12.3,0.9+1.3,'');
+ st+=lab(2.2,1.1,'Ø3×0.5 磁铁 · 霍尔',GC.sen);
+ st+=lab(-12.3,31.6,'Z / mm');
+ [0,10,20,30].forEach(z=>st+=`<line x1="${px(-12.5)}" x2="${px(-12)}" y1="${pz(z)}" y2="${pz(z)}" stroke="var(--dim)"/>`);
+ $('#section').innerHTML=`<svg viewBox="0 0 ${SW} ${SH}" font-family="JetBrains Mono,monospace">${st}</svg>`;
+ let tgt=0,cur=0;const mvg=$('#mv'),btn=$('#pressBtn');
+ const down=e=>{e.preventDefault();tgt=1;btn.classList.add('on')},up=()=>{tgt=0;btn.classList.remove('on')};
+ btn.addEventListener('pointerdown',down);['pointerup','pointerleave','pointercancel'].forEach(t=>btn.addEventListener(t,up));
+ (function an(){cur+=(tgt-cur)*.18;mvg.setAttribute('transform',`translate(0 ${cur*0.9*s2})`);
+  $('#pressRead').textContent=`下沉 ${(cur*0.02).toFixed(3)} mm · 磁场变化 ≈ ${(cur*1.0).toFixed(2)} mT（动画放大 45×）`;requestAnimationFrame(an)})();
+
+ // C: FFC interconnect
+ const PM={L:{14:'VM',13:'VM',12:'VM',11:'GND',10:'GND',9:'GND',8:'K3V3',7:'INU',6:'INV',5:'INW',4:'PRESS',3:'CSN',2:'CLK',1:'DO'}};
+ PM.R={};for(let i=1;i<=14;i++)PM.R[i]=PM.L[15-i];
+ const grp={VM:'pwr',GND:'gnd',K3V3:'pwr',INU:'pwm',INV:'pwm',INW:'pwm',PRESS:'sen',CSN:'spi',CLK:'spi',DO:'spi'};
+ const dest={L:{VM:'VSYS ← P-MOS · P0.19',GND:'GND 平面',K3V3:'3.3 V（编码器 / 霍尔）',INU:'P1.10 · PWM',INV:'P1.11 · PWM',INW:'P1.13 · PWM',PRESS:'复用器 A · 通道 0',CSN:'P1.15 · 片选',CLK:'P0.22 · 共用',DO:'P0.24 · 共用'},
+  R:{VM:'VSYS ← P-MOS · P0.19',GND:'GND 平面',K3V3:'3.3 V（编码器 / 霍尔）',INU:'P0.13 · PWM',INV:'P0.15 · PWM',INW:'P0.17 · PWM',PRESS:'复用器 C · 通道 15',CSN:'P0.20 · 片选',CLK:'P0.22 · 共用',DO:'P0.24 · 共用'}};
+ const what={VM:'电机电源',GND:'地',K3V3:'传感器电源',INU:'U 相',INV:'V 相',INW:'W 相',PRESS:'下压模拟量',CSN:'编码器片选',CLK:'编码器时钟',DO:'编码器数据'};
+ function draw(side){const rh=30,top=40,FW=1000,FH=top+14*rh+20;let o='';
+  o+=`<text x="0" y="18" fill="var(--dim)" font-size="11" letter-spacing="2">旋钮小板 J1</text><text x="${FW}" y="18" fill="var(--dim)" font-size="11" letter-spacing="2" text-anchor="end">主板 · nRF52840</text>`;
+  const order=[];for(let i=14;i>=1;i--)order.push(i);
+  const nets=[...new Set(order.map(i=>PM[side][i]))];
+  const ny={};nets.forEach((n,k)=>ny[n]=top+ (k+.5)*(14*rh/nets.length));
+  order.forEach((pin,k)=>{const n=PM[side][pin],c=GC[grp[n]],y=top+k*rh+rh/2;
+   o+=`<g class="pin"><rect x="0" y="${y-11}" width="44" height="22" rx="3" fill="none" stroke="var(--line)"/><text x="22" y="${y+4}" text-anchor="middle" fill="var(--dim)" font-size="11">${pin}</text>
+   <text x="58" y="${y+4}" fill="${c}" font-size="12">${n}</text><text x="130" y="${y+4}" fill="var(--dim)" font-size="11">${what[n]}</text>
+   <path d="M260 ${y} C 520 ${y}, 520 ${ny[n]}, 700 ${ny[n]}" fill="none" stroke="${c}" stroke-width="1.3" opacity=".75"/></g>`});
+  nets.forEach(n=>{const c=GC[grp[n]];o+=`<circle cx="700" cy="${ny[n]}" r="3" fill="${c}"/><text x="${FW}" y="${ny[n]+4}" text-anchor="end" fill="var(--ink)" font-size="12">${dest[side][n]}</text>`});
+  $('#ffc').innerHTML=`<svg viewBox="0 0 ${FW} ${FH}" font-family="JetBrains Mono,monospace" style="margin-top:12px">${o}</svg>`}
+ draw('L');
+ $$('#sideTabs button').forEach(b=>b.onclick=()=>{$$('#sideTabs button').forEach(x=>x.classList.toggle('on',x===b));draw(b.dataset.s)});
+})();
 </script>
 </body>
 </html>
