@@ -1,0 +1,235 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T12:18:08",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "key": "silk_edge_clearance"
+        },
+        {
+            "description": "Text height out of range",
+            "key": "text_height"
+        },
+        {
+            "description": "Text thickness out of range",
+            "key": "text_thickness"
+        },
+        {
+            "description": "Isolated copper fill",
+            "key": "isolated_copper"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint not found in libraries",
+            "key": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "bk46_main.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 68.15,
+                        "y": 37.7
+                    },
+                    "uuid": "0329b6e6-1610-4b55-bd1f-38ad646dde97"
+                },
+                {
+                    "description": "Footprint R136",
+                    "pos": {
+                        "x": 61.675,
+                        "y": 41.025
+                    },
+                    "uuid": "651435a1-14e6-460c-a6ff-56fd6b4568f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 68.15,
+                        "y": 37.7
+                    },
+                    "uuid": "0329b6e6-1610-4b55-bd1f-38ad646dde97"
+                },
+                {
+                    "description": "Footprint C137",
+                    "pos": {
+                        "x": 74.525,
+                        "y": 41.025
+                    },
+                    "uuid": "96cfd1af-d4d8-43ca-a5e0-1b777aea5229"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 93.3,
+                        "y": 38.599999
+                    },
+                    "uuid": "10b5a2c6-b54b-4918-8efb-b2742f375c3c"
+                },
+                {
+                    "description": "Footprint U138",
+                    "pos": {
+                        "x": 96.675,
+                        "y": 39.825
+                    },
+                    "uuid": "24b6bb25-102d-4c3f-8eec-b8c40529e60d"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 93.3,
+                        "y": 38.599999
+                    },
+                    "uuid": "10b5a2c6-b54b-4918-8efb-b2742f375c3c"
+                },
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 87.15,
+                        "y": 33.85
+                    },
+                    "uuid": "f4328f67-db50-457d-ac5a-4e6b845b06be"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint R144",
+                    "pos": {
+                        "x": 214.075,
+                        "y": 41.025
+                    },
+                    "uuid": "3059e749-5e9b-4a43-b6de-fc339c4ba7c3"
+                },
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 220.55,
+                        "y": 37.7
+                    },
+                    "uuid": "7b6412f2-4446-4945-aa91-3db95bb66947"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 220.55,
+                        "y": 37.7
+                    },
+                    "uuid": "7b6412f2-4446-4945-aa91-3db95bb66947"
+                },
+                {
+                    "description": "Footprint C145",
+                    "pos": {
+                        "x": 226.925,
+                        "y": 41.025
+                    },
+                    "uuid": "9ed0bc27-7bc1-4b49-81bd-049e30f4f7a5"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 97.8,
+                        "y": 69.65
+                    },
+                    "uuid": "930465fc-ed40-4429-b53b-ffde886efebc"
+                },
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 97.8,
+                        "y": 71.95
+                    },
+                    "uuid": "96ecb676-d7e2-45b9-9b97-2dac608abecc"
+                }
+            ],
+            "severity": "warning",
+            "type": "courtyards_overlap"
+        }
+    ]
+}

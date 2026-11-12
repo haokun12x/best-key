@@ -1,0 +1,8 @@
+Qty per board,Value,Footprint,Side,Refs
+1,MT6701QT,Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm,F,U1
+2,100n,Capacitor_SMD:C_0402_1005Metric,F,C1 C4
+1,Z-axis linear Hall/TMR (DRV5056A4 / TMR2617S),Package_TO_SOT_SMD:SOT-23,B,U3
+1,STSPIN233,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm,F,U2
+1,22u 6.3V,Capacitor_SMD:C_0603_1608Metric,F,C2
+1,10k,Resistor_SMD:R_0402_1005Metric,F,R1
+1,FFC 14P 0.5mm,Connector_FFC-FPC:Hirose_FH12-14S-0.5SH_1x14-1MP_P0.50mm_Horizontal,F,J1

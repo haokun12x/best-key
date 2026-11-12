@@ -1,0 +1,50 @@
+[
+ {
+  "ref": "U1",
+  "value": "MT6701QT",
+  "footprint": "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm",
+  "side": "F"
+ },
+ {
+  "ref": "C1",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F"
+ },
+ {
+  "ref": "U3",
+  "value": "Z-axis linear Hall/TMR (DRV5056A4 / TMR2617S)",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B"
+ },
+ {
+  "ref": "U2",
+  "value": "STSPIN233",
+  "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm",
+  "side": "F"
+ },
+ {
+  "ref": "C2",
+  "value": "22u 6.3V",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "F"
+ },
+ {
+  "ref": "C4",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F"
+ },
+ {
+  "ref": "R1",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "F"
+ },
+ {
+  "ref": "J1",
+  "value": "FFC 14P 0.5mm",
+  "footprint": "Connector_FFC-FPC:Hirose_FH12-14S-0.5SH_1x14-1MP_P0.50mm_Horizontal",
+  "side": "F"
+ }
+]

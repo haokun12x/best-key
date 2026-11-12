@@ -1,0 +1,39 @@
+Qty,Value,Footprint,Part / LCSC (verify before ordering),Refs
+50,100n,Capacitor_SMD:C_0402_1005Metric,C1525,C200 ... C12
+48,10k,Resistor_SMD:R_0402_1005Metric,C25744,R100 ... R6
+46,TMR2617S,Package_TO_SOT_SMD:SOT-23,TMR2617S (MDT),U100 ... U145
+46,22n,Capacitor_SMD:C_0402_1005Metric,C1532,C100 ... C145
+46,WS2812B-2020,LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm,C965555,D100 ... D145
+4,4u7,Capacitor_SMD:C_0603_1608Metric,C19666,C2 C3 C5 C6
+4,100k,Resistor_SMD:R_0402_1005Metric,C25741,R7 R9 R12 R8
+3,CD74HC4067SM96,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,C98457,U10 U11 U12
+3,1u,Capacitor_SMD:C_0603_1608Metric,C15849,C4 C7 C8
+3,AO3401A,Package_TO_SOT_SMD:SOT-23,C15127,Q1 Q3 Q2
+2,5k1,Resistor_SMD:R_0402_1005Metric,C25905,R1 R2
+2,B5819W,Diode_SMD:D_SOD-123,C8598,D1 D2
+2,1M,Resistor_SMD:R_0402_1005Metric,C26083,R10 R11
+2,FFC 14P 0.5mm,Connector_FFC-FPC:Hirose_FH12-14S-0.5SH_1x14-1MP_P0.50mm_Horizontal,C11084,J2 J3
+2,22u,Capacitor_SMD:C_0805_2012Metric,C45783,C20 C21
+1,MDBT50Q-1MV2,RF_Module:Raytac_MDBT50Q,C5118826,U1
+1,W25Q32JVSSIQ (optional),Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,C179171,U6
+1,USB-C 16P,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,C165948,J1
+1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,C7519,U3
+1,BQ24075RGT,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,C15220,U4
+1,2k2,Resistor_SMD:R_0402_1005Metric,C25879,R3
+1,1k5,Resistor_SMD:R_0402_1005Metric,C25867,R4
+1,XC6206P332MR,Package_TO_SOT_SMD:SOT-23,C5446,U5
+1,pad QI5V,solder pad 1.5mm,-,TP1
+1,pad GND,solder pad 1.5mm,-,TP2
+1,2N7002,Package_TO_SOT_SMD:SOT-23,C8545,Q4
+1,10u,Capacitor_SMD:C_0805_2012Metric,C15850,C9
+1,BAT (JST-SH 2P),Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal,C160402,J4
+1,pad GND,solder pad 1.6mm,-,TP10
+1,pad +3V3,solder pad 1.6mm,-,TP11
+1,pad SCL,solder pad 1.6mm,-,TP12
+1,pad SDA,solder pad 1.6mm,-,TP13
+1,pad SWDIO,solder pad 1.3mm,-,TP20
+1,pad SWCLK,solder pad 1.3mm,-,TP21
+1,pad RESET,solder pad 1.3mm,-,TP22
+1,pad GND,solder pad 1.3mm,-,TP23
+1,pad +3V3,solder pad 1.3mm,-,TP24
+46,Kailh hot-swap socket CPG151101S11,in key footprint SW1..SW46,C2803348,SW1 ... SW46

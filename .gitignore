@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# KiCad per-user state and caches
+*.kicad_prl
+*-backups/
+fp-info-cache
+drc_clean.json
+# Freerouting jar (62 MB) — download freerouting-2.5.0.jar into tools/freerouting/
+tools/freerouting/*.jar
+# intermediate output of tools/finish_main.sh
+pcb/main_fin/
+.claude/

@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BK46 Keyboard</title>
+<meta name="description" content="BK46：46 键正交键盘，双直驱力反馈旋钮，机械轴与磁轴共用，三模加无线充电。逐层拆解。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&family=Noto+Sans+SC:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f3ef; --bg2:#ebe9e3; --ink:#16161a; --dim:#6c6b68; --faint:#b9b7b0; --line:#d6d3cb;
+  --gold:#a07a3c; --gold2:#c9a46a; --glass:rgba(255,255,255,.55);
+  --pcb:#1d4b3a; --cu:#b8763b;
+  --sans:"Inter","Noto Sans SC",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b0b0d; --bg2:#121215; --ink:#ecebe6; --dim:#8a8984; --faint:#3a3a3f; --line:#232327;
+  --gold:#c9a46a; --gold2:#e4c896; --glass:rgba(20,20,24,.6);
+}}
+:root[data-theme="dark"]{
+  --bg:#0b0b0d; --bg2:#121215; --ink:#ecebe6; --dim:#8a8984; --faint:#3a3a3f; --line:#232327;
+  --gold:#c9a46a; --gold2:#e4c896; --glass:rgba(20,20,24,.6);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:300 16px/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.mono{font-family:var(--mono);letter-spacing:.02em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+@media(max-width:640px){.wrap{padding:0 16px}}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:20;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--glass);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;height:56px;gap:28px}
+nav .brand{font:500 13px var(--mono);letter-spacing:.3em}
+nav .links{display:flex;gap:22px;margin-left:auto;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+nav .links a{text-decoration:none}nav .links a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--dim);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:12px}
+@media(max-width:820px){nav .links{display:none}nav #theme{margin-left:auto}}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:120px;padding-bottom:60px;position:relative}
+.eyebrow{font:400 11px var(--mono);letter-spacing:.38em;color:var(--gold);text-transform:uppercase}
+h1{font-weight:200;font-size:clamp(56px,11vw,148px);letter-spacing:-.04em;line-height:.95;margin:18px 0 22px}
+h1 sup{font-size:.22em;letter-spacing:.1em;vertical-align:top;color:var(--dim);font-weight:300;margin-left:.3em}
+.lede{max-width:560px;color:var(--dim);font-size:17px}
+.kb{margin-top:64px;width:100%}
+.kb svg{width:100%;height:auto;display:block;overflow:visible}
+.hero-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:56px;border-top:1px solid var(--line)}
+.hero-meta div{padding:18px 0 0}
+.hero-meta b{display:block;font:200 30px var(--sans);letter-spacing:-.02em}
+.hero-meta span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+@media(max-width:640px){.hero-meta{grid-template-columns:repeat(2,1fr);row-gap:18px}}
+
+/* sections */
+section{padding:140px 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:120px 1fr;gap:24px;margin-bottom:64px}
+.sec-num{font:400 12px var(--mono);color:var(--gold);letter-spacing:.2em;padding-top:14px}
+h2{font-weight:200;font-size:clamp(34px,5vw,56px);letter-spacing:-.03em;line-height:1.1}
+h2 em{font-style:normal;color:var(--dim)}
+.sec-head p{color:var(--dim);max-width:620px;margin-top:18px}
+@media(max-width:640px){.sec-head{grid-template-columns:1fr;gap:8px}section{padding:96px 0}}
+h3{font-weight:400;font-size:15px;letter-spacing:.02em;margin-bottom:6px}
+.small{font-size:13px;color:var(--dim)}
+.tag{display:inline-block;font:400 10px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);padding:3px 8px;border-radius:20px}
+
+/* exploded stack */
+.stack{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+@media(max-width:900px){.stack{grid-template-columns:1fr}}
+.scene{height:600px;perspective:1800px;position:relative}
+.rig{position:absolute;left:50%;top:52%;width:480px;height:172px;margin:-86px 0 0 -240px;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-32deg)}
+@media(max-width:640px){.scene{height:440px}.rig{transform:rotateX(58deg) rotateZ(-32deg) scale(.62)}}
+.ly{position:absolute;inset:0;border-radius:8px;transition:transform .9s cubic-bezier(.2,.8,.2,1),opacity .4s,box-shadow .4s;cursor:pointer;transform-style:preserve-3d}
+.ly .lbl{position:absolute;right:-12px;top:50%;transform:translate(100%,-50%) rotateZ(32deg) rotateX(-58deg);transform-origin:left center;font:400 10px var(--mono);letter-spacing:.18em;color:var(--dim);white-space:nowrap;pointer-events:none;transition:color .3s}
+.ly.on .lbl{color:var(--gold)}
+.ly.on{box-shadow:0 0 0 1px var(--gold)}
+.stack.focus .ly:not(.on){opacity:.28}
+.stack-ctl{display:flex;align-items:center;gap:14px;margin-top:8px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1px;background:var(--line);outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--ink);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--ink);border:none}
+.layer-list{list-style:none;border-top:1px solid var(--line)}
+.layer-list li{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer;transition:color .2s}
+.layer-list li .z{font:400 11px var(--mono);color:var(--faint);padding-top:3px}
+.layer-list li:hover,.layer-list li.on{color:var(--gold)}
+.layer-list li .d{display:none;font-size:13px;color:var(--dim);margin-top:4px}
+.layer-list li.on .d{display:block}
+
+/* signal chain */
+.chain{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.chain .n{padding:26px 22px;border:1px solid var(--line);margin-left:-1px;background:var(--bg)}
+.chain .n .k{font:400 10px var(--mono);letter-spacing:.2em;color:var(--gold)}
+.chain .n b{display:block;font-weight:300;font-size:20px;margin:8px 0 6px;letter-spacing:-.01em}
+@media(max-width:900px){.chain{grid-template-columns:1fr}.chain .n{margin:-1px 0 0}}
+.pulse{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);background-size:40% 100%;background-repeat:no-repeat;animation:pulse 3.2s linear infinite;margin:28px 0}
+@keyframes pulse{from{background-position:-40% 0}to{background-position:140% 0}}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:72px}
+@media(max-width:900px){.duo{grid-template-columns:1fr}}
+.cell-diag svg{width:100%;height:auto}
+
+/* chart */
+.bars{display:grid;gap:22px}
+.bar{display:grid;grid-template-columns:1fr;gap:6px}
+.bar .t{display:flex;justify-content:space-between;font-size:13px}
+.bar .t span:last-child{font-family:var(--mono);color:var(--dim)}
+.bar .track{height:2px;background:var(--line);position:relative}
+.bar .fill{position:absolute;left:0;top:-1px;height:4px;background:var(--ink);width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar.pick .fill{background:var(--gold)}
+.bar.bad .fill{background:var(--faint)}
+
+/* knob */
+.knob{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+@media(max-width:900px){.knob{grid-template-columns:1fr}}
+.dial-wrap{display:flex;flex-direction:column;align-items:center;gap:22px}
+#dial{width:300px;height:300px;max-width:80vw;max-height:80vw;touch-action:none;cursor:grab}
+#dial:active{cursor:grabbing}
+.modes{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.modes button{font:400 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;background:none;color:var(--dim);border:1px solid var(--line);padding:7px 12px;border-radius:20px;cursor:pointer}
+.modes button.on{color:var(--bg);background:var(--ink);border-color:var(--ink)}
+.readout{font:300 12px var(--mono);color:var(--dim);letter-spacing:.1em}
+.specs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.specs div{padding:16px 16px 16px 0;border-bottom:1px solid var(--line)}
+.specs dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.specs dd{font-size:15px;margin-top:2px}
+
+/* pcb */
+.pcb-tabs{display:flex;gap:0;border:1px solid var(--line);width:max-content;border-radius:24px;overflow:hidden;margin-bottom:26px;max-width:100%;overflow-x:auto}
+.pcb-tabs button{font:400 11px var(--mono);letter-spacing:.14em;background:none;border:none;color:var(--dim);padding:9px 16px;cursor:pointer;white-space:nowrap}
+.pcb-tabs button.on{background:var(--ink);color:var(--bg)}
+.pcb-view{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#0a0c0b;aspect-ratio:237.2/84.8}
+.pcb-view img{position:absolute;inset:-2%;width:104%;height:104%;object-fit:contain;opacity:0;transition:opacity .6s;filter:grayscale(1) invert(1) sepia(.7) brightness(.62) contrast(1.15)}
+.pcb-view img.on{opacity:1}
+.pcb-view img.stacked{opacity:.32;mix-blend-mode:screen}
+.pcb-cap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:28px}
+@media(max-width:820px){.pcb-cap{grid-template-columns:1fr 1fr}}
+.pcb-cap b{display:block;font:200 28px var(--sans)}
+.pcb-cap span{font-size:12px;color:var(--dim)}
+
+/* case gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.gal figure{background:var(--bg);padding:28px;display:flex;flex-direction:column;gap:12px}
+.gal figure.wide{grid-column:1/-1}
+.gal img{width:100%;height:auto;max-height:420px;object-fit:contain;display:block}
+:root[data-theme="dark"] .gal img, .dk .gal img{filter:invert(.92) hue-rotate(180deg)}
+.rot{container-type:inline-size;aspect-ratio:2.4;overflow:hidden;position:relative}
+.rot img{position:absolute;left:50%;top:50%;width:auto;height:100cqw;max-height:none;transform:translate(-50%,-50%) rotate(-90deg)}
+.gal figcaption{font-size:12px;color:var(--dim);display:flex;justify-content:space-between}
+@media(max-width:700px){.gal{grid-template-columns:1fr}}
+
+/* status */
+.status{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+@media(max-width:900px){.status{grid-template-columns:1fr}}
+.status ul{list-style:none}
+.status li{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;display:flex;gap:12px}
+.status li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;margin-top:9px;background:var(--faint)}
+.status .ok li::before{background:var(--gold)}
+.status .risk li::before{background:none;border:1px solid var(--dim)}
+pre{font:300 12.5px/1.8 var(--mono);color:var(--dim);overflow-x:auto;border-left:1px solid var(--gold);padding:4px 0 4px 20px}
+footer{padding:80px 0 60px;border-top:1px solid var(--line);font-size:12px;color:var(--dim);letter-spacing:.06em}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.pulse{animation:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <span class="brand">BK46</span>
+  <div class="links"><a href="#stack">叠层</a><a href="#sense">感应</a><a href="#knob">旋钮</a><a href="#pcb">电路板</a><a href="#case">外壳</a><a href="#status">状态</a></div>
+  <button id="theme" aria-label="切换明暗">◐</button>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="eyebrow">An open-hardware 40% instrument</div>
+  <h1>BK46<sup>REV.A</sup></h1>
+  <p class="lede">46 键正交键盘：左右上角各一个直驱力反馈旋钮，每个键位都能装机械轴或磁轴，有线、蓝牙、2.4G 三模，支持无线充电。外框每边只比键区宽 4.3 mm。</p>
+  <div class="kb" id="kb"></div>
+  <div class="hero-meta">
+    <div><b>237.2</b><span>宽 mm</span></div>
+    <div><b>84.8</b><span>深 mm</span></div>
+    <div><b>19.8</b><span>高 mm</span></div>
+    <div><b>~65 g</b><span>尼龙外壳</span></div>
+  </div>
+</header>
+
+<section id="stack"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">01 / STACK</div><div>
+    <h2>19.8 mm 里<br><em>放下所有部件</em></h2>
+    <p>电池、Qi 线圈、四层主板、夹心棉、定位板和上框按高度从下往上叠放。拖动滑块拆开各层，点任意一层查看它的位置和作用。</p>
+  </div></div>
+  <div class="stack reveal" id="stackBox">
+    <div>
+      <div class="scene"><div class="rig" id="rig"></div></div>
+      <div class="stack-ctl"><span class="small mono">合</span><input type="range" id="explode" min="0" max="100" value="62"><span class="small mono">分</span></div>
+    </div>
+    <ul class="layer-list" id="layers"></ul>
+  </div>
+</div></section>
+
+<section id="sense"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">02 / SENSING</div><div>
+    <h2>机械轴和磁轴<br><em>用同一条扫描链路</em></h2>
+    <p>主板没有二极管矩阵。每个键位同时有热插拔座和一颗线性磁传感器，汇到同一个节点。固件校准时自动判断每个键装的是哪种轴。</p>
+  </div></div>
+  <div class="chain reveal">
+    <div class="n"><div class="k">01</div><b>传感器</b><span class="small">SOT-23 线性 TMR，位于轴心南侧 3.5 mm</span></div>
+    <div class="n"><div class="k">02</div><b>10 kΩ → KEY</b><span class="small">热插拔座一脚接 KEY，一脚接地；机械轴按下时把 KEY 拉到 0 V</span></div>
+    <div class="n"><div class="k">03</div><b>3 × CD74HC4067</b><span class="small">共 48 路：46 个键加两个旋钮的下压</span></div>
+    <div class="n"><div class="k">04</div><b>nRF52840 ADC</b><span class="small">P0.29 / P0.31 / P0.30，读到模拟行程</span></div>
+    <div class="n"><div class="k">05</div><b>全键无冲</b><span class="small">传感器由 P-MOS 供电，空闲时间歇上电</span></div>
+  </div>
+  <div class="pulse"></div>
+  <div class="duo">
+    <div class="reveal">
+      <span class="tag">磁场仿真</span>
+      <h3 style="margin-top:18px">传感器偏离轴心 3.5 mm 时的磁场</h3>
+      <p class="small" style="margin-bottom:28px">看触底前 0.5 mm 内场强的变化斜率（mT/mm），斜率越大越能分辨行程。数据来自 analysis/tmr_field.py。</p>
+      <div class="bars" id="bars">
+        <div class="bar" data-v="33"><div class="t"><span>轴心正下方 · Z 向（常规磁轴板）</span><span>33.0</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar pick" data-v="8.1"><div class="t"><span>偏 3.5 mm · 面内径向（本设计选用）</span><span>8.1</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar bad" data-v="0.4"><div class="t"><span>偏 3.5 mm · Z 向（场强随行程不单调）</span><span>0.4</span></div><div class="track"><div class="fill"></div></div></div>
+      </div>
+    </div>
+    <div class="reveal cell-diag" id="cell"></div>
+  </div>
+</div></section>
+
+<section id="knob"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">03 / HAPTICS</div><div>
+    <h2>直驱力反馈旋钮<br><em>只占一个 1u 键位</em></h2>
+    <p>旋钮由 1404 无刷外转子电机直接驱动，没有齿轮。MT6701 读取角度，STSPIN233 驱动三相。档位咔哒、阻尼、回弹和震动都由电机产生。可以用鼠标或手指拖动下面的旋钮试试几种模式。</p>
+  </div></div>
+  <div class="knob">
+    <div class="dial-wrap reveal">
+      <canvas id="dial" width="600" height="600" aria-label="力反馈旋钮演示"></canvas>
+      <div class="modes" id="modes">
+        <button data-m="detent" class="on">档位</button><button data-m="smooth">阻尼</button><button data-m="spring">回弹</button><button data-m="end">端止</button>
+      </div>
+      <div class="readout" id="readout">0.0°</div>
+    </div>
+    <dl class="specs reveal">
+      <div><dt>电机</dt><dd>1404 外转子 BLDC</dd></div>
+      <div><dt>扭矩（估算）</dt><dd>≈ 5 mN·m</dd></div>
+      <div><dt>角度</dt><dd>MT6701 · 14 bit</dd></div>
+      <div><dt>驱动</dt><dd>STSPIN233 三相</dd></div>
+      <div><dt>下压</dt><dd>悬臂小岛 + Z 向霍尔</dd></div>
+      <div><dt>下沉量</dt><dd>4 N 时约 0.02 mm</dd></div>
+      <div><dt>小板</dt><dd>0.6 mm · 2 层</dd></div>
+      <div><dt>连接</dt><dd>14P 0.5 mm FFC</dd></div>
+    </dl>
+  </div>
+</div></section>
+
+<section id="pcb"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">04 / COPPER</div><div>
+    <h2>四层主板<br><em>布线全部由脚本完成</em></h2>
+    <p>主板由脚本生成元件布局，先用自写的布线器布线，剩下的几条线再用拆线重布补完。下面是 KiCad 导出的四层铜，可切换单层或叠加查看。</p>
+  </div></div>
+  <div class="reveal">
+    <div class="pcb-tabs" id="pcbTabs">
+      <button data-l="F" class="on">F.Cu 信号</button><button data-l="In1">In1 地</button><button data-l="In2">In2 VLED</button><button data-l="B">B.Cu 信号</button><button data-l="all">叠加</button>
+    </div>
+    <div class="pcb-view" id="pcbView">
+      <img data-l="F" class="on" src="pcb/main/fab/plot_F.Cu.svg" alt="F.Cu">
+      <img data-l="In1" src="pcb/main/fab/plot_In1.Cu.svg" alt="In1.Cu" loading="lazy">
+      <img data-l="In2" src="pcb/main/fab/plot_In2.Cu.svg" alt="In2.Cu" loading="lazy">
+      <img data-l="B" src="pcb/main/fab/plot_B.Cu.svg" alt="B.Cu" loading="lazy">
+    </div>
+    <div class="pcb-cap">
+      <div><b>100%</b><span>三块板全部布通</span></div>
+      <div><b>0</b><span>DRC 错误 / 未连接</span></div>
+      <div><b>0.15</b><span>最细线宽 mm · 适合模块焊盘间距</span></div>
+      <div><b>0.5</b><span>VSYS 电源线宽 mm</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="case"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">05 / ENCLOSURE</div><div>
+    <h2>两件式外壳<br><em>拆 8 颗螺丝就能打开</em></h2>
+    <p>底壳和上框都用 CadQuery 脚本生成，并与 PCB、电机、电池、线圈、显示模块做过干涉检查，结果为零。定位板上下各贴 15 段 Poron 垫片（gasket 结构）。维修时拧下底部 8 颗螺丝，上框连同键帽可直接提起。</p>
+  </div></div>
+  <div class="gal reveal">
+    <figure class="wide"><img src="site/render/assembly.svg" alt="总装" loading="lazy"><figcaption><span>总装</span><span class="mono">bk46_assembly.step</span></figcaption></figure>
+    <figure><img src="site/render/tub.svg" alt="底壳" loading="lazy"><figcaption><span>底壳</span><span class="mono">tub.step</span></figcaption></figure>
+    <figure><img src="site/render/bezel.svg" alt="上框" loading="lazy"><figcaption><span>上框</span><span class="mono">bezel.step</span></figcaption></figure>
+    <figure class="wide"><img src="site/render/plate.svg" alt="定位板" loading="lazy"><figcaption><span>定位板 1.5 mm</span><span class="mono">plate.step</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="status"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">06 / STATUS</div><div>
+    <h2>当前进度<br><em>和尚待验证的部分</em></h2>
+    <p>制作文件已经齐全，但还没有打样。打样前请先看第三列的风险。</p>
+  </div></div>
+  <div class="status reveal">
+    <div class="ok"><span class="tag">已完成</span><ul style="margin-top:16px">
+      <li>外壳与所有部件的干涉检查为零</li><li>主板：100% 布通，DRC 零错误</li><li>两块旋钮小板：100% 布通，DRC 零错误</li><li>Gerber、钻孔和贴片坐标文件已导出</li>
+    </ul></div>
+    <div><span class="tag">未完成</span><ul style="margin-top:16px">
+      <li>原理图（网表以 netlist.json 为准）</li><li>固件：用 RMK 配合 Vial，或用 ZMK</li><li>BOM 中的立创编号需逐个核对</li>
+    </ul></div>
+    <div class="risk"><span class="tag">待验证</span><ul style="margin-top:16px">
+      <li>面内感应 TMR 的具体型号（建议先做 2×2 小板验证）</li><li>旋钮下压的灵敏度</li><li>MT6701 MODE 脚的接法</li><li>左旋钮 PWM 所用低频引脚是否影响蓝牙</li>
+    </ul></div>
+  </div>
+  <div class="reveal" style="margin-top:96px">
+    <span class="tag">重新生成</span>
+<pre style="margin-top:18px">.venv/bin/python mech/build_case.py                 # 外壳 STEP / STL
+tools/kpy.sh pcb/gen_main.py                        # 主板布局与布线
+tools/finish_main.sh pcb/main/bk46_main.kicad_pcb pcb/main_fin   # 补完剩余连线，约 35 分钟
+tools/kpy.sh pcb/gen_knob.py                        # 旋钮小板</pre>
+  </div>
+</div></section>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+  <span class="mono">BK46 · REV.A · 2026</span><span>详细说明见 README.md</span>
+</div></footer>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const NS='http://www.w3.org/2000/svg';
+// theme
+(()=>{const r=document.documentElement;let t;try{t=localStorage.getItem('bk46-theme')}catch(e){}
+ if(t)r.dataset.theme=t;
+ $('#theme').onclick=()=>{const dark=r.dataset.theme? r.dataset.theme==='dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+  r.dataset.theme=dark?'light':'dark';try{localStorage.setItem('bk46-theme',r.dataset.theme)}catch(e){}};
+ const sync=()=>{const d=r.dataset.theme? r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;document.body.classList.toggle('dk',d)};
+ sync();new MutationObserver(sync).observe(r,{attributes:true});matchMedia('(prefers-color-scheme:dark)').addEventListener('change',sync);})();
+
+// hero keyboard: 12x4, knobs top-left/top-right
+(()=>{const U=19.05,W=237.2,H=84.8,ox=(W-12*U)/2,oy=(H-4*U)/2;
+ const s=document.createElementNS(NS,'svg');s.setAttribute('viewBox',`-2 -2 ${W+4} ${H+4}`);
+ let h=`<rect x="0" y="0" width="${W}" height="${H}" rx="4" fill="none" stroke="var(--faint)" stroke-width=".3"/>`;
+ let i=0;
+ for(let r=0;r<4;r++)for(let c=0;c<12;c++){const x=ox+c*U,y=oy+r*U;
+  if(r===0&&(c===0||c===11)){h+=`<g class="kn" style="transform-origin:${x+U/2}px ${y+U/2}px"><circle cx="${x+U/2}" cy="${y+U/2}" r="9.3" fill="none" stroke="var(--gold)" stroke-width=".35"/>`;
+   for(let k=0;k<24;k++){const a=k/24*Math.PI*2;h+=`<line x1="${x+U/2+Math.cos(a)*8}" y1="${y+U/2+Math.sin(a)*8}" x2="${x+U/2+Math.cos(a)*9.3}" y2="${y+U/2+Math.sin(a)*9.3}" stroke="var(--gold)" stroke-width=".25"/>`}
+   h+=`<circle cx="${x+U/2}" cy="${y+U/2-6}" r=".6" fill="var(--gold)"/></g>`;continue}
+  h+=`<rect class="cap" data-i="${i++}" x="${x+1}" y="${y+1}" width="${U-2}" height="${U-2}" rx="2.2" fill="none" stroke="var(--ink)" stroke-opacity=".55" stroke-width=".28"/>`;}
+ s.innerHTML=h;$('#kb').appendChild(s);
+ const caps=[...s.querySelectorAll('.cap')],kn=[...s.querySelectorAll('.kn')];let t=0;
+ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function tick(){t+=.016;
+  caps.forEach((c,j)=>{const col=j%12,row=(j/12|0);const v=Math.max(0,Math.sin(t*1.2-col*.45-row*.3));
+   c.setAttribute('fill',`hsla(${(t*30+col*14+row*20)%360},70%,60%,${v*v*.22})`)});
+  kn.forEach((k,j)=>k.style.transform=`rotate(${Math.sin(t*.7+j*2)*40}deg)`);
+  if(!reduce)requestAnimationFrame(tick)}
+ tick();})();
+
+// exploded stack
+(()=>{const L=[
+ {n:'底壳',z:'0 – 1.6',h:0,c:'var(--faint)',o:.9,d:'尼龙打印底板 1.6 mm，8 颗 M2×18 沉头螺丝从底面拧入。'},
+ {n:'电池 · Qi 线圈',z:'1.6 – 4.8',h:1.6,c:'#7b6a52',o:.85,d:'304060 锂电（约 800 mAh），Qi 5 V 成品接收贴片；腔体高 5.6 mm。',p:'cells'},
+ {n:'旋钮小板',z:'2.0 – 2.6',h:2.8,c:'#2a5a46',o:.9,d:'0.6 mm 双层板。电机座是由 4 根 FR4 梁悬挂的小岛，按下时下沉，由背面磁传感器检测。',p:'knobs'},
+ {n:'主板',z:'7.2 – 8.8',h:7.2,c:'var(--pcb)',o:.95,d:'4 层 1.6 mm 板，In1 为地平面，In2 为 LED 电源平面。nRF52840 模块、3 颗复用器、46 颗灯珠和 46 颗传感器都在这块板上。'},
+ {n:'夹心棉',z:'8.8 – 12.3',h:8.8,c:'#cfc8b8',o:.35,d:'3.5 mm 泡棉，与轴体下壳同高。'},
+ {n:'定位板 + 垫片',z:'12.3 – 13.8',h:12.3,c:'#a8adb0',o:.75,d:'1.5 mm 定位板（FR4、PC 或铝均可），边缘正反两面各贴 15 段 Poron 垫片，压缩到 1.2 mm。',p:'plate'},
+ {n:'上框',z:'15.0 – 19.8',h:15,c:'var(--ink)',o:.92,d:'上框带着键帽可以整体提起，内胆随后取出。',p:'bezel'},
+ {n:'旋钮帽',z:'17.6 – 31.0',h:19.8,c:'var(--gold)',o:1,d:'Ø18.6 mm，直接装在电机转子上，没有齿轮。',p:'caps'}];
+ const rig=$('#rig'),ul=$('#layers'),box=$('#stackBox');
+ const U=480/237.2*19.05,ox=(480-12*U)/2,oy=(172-4*U)/2;
+ function deco(p){if(p==='knobs'||p==='caps')return[0,11].map(c=>`<div style="position:absolute;left:${ox+c*U+U/2-(p==='caps'?18:15)}px;top:${oy+U/2-(p==='caps'?18:15)}px;width:${p==='caps'?36:30}px;height:${p==='caps'?36:30}px;border-radius:${p==='caps'?'50%':'3px'};border:1px solid var(--gold2);background:${p==='caps'?'var(--gold)':'transparent'}"></div>`).join('');
+  if(p==='cells')return`<div style="position:absolute;left:22%;top:18%;width:27%;height:64%;border:1px solid #d9c9a8;border-radius:3px"></div><div style="position:absolute;left:55%;top:14%;width:22%;height:72%;border:1px dashed #d9c9a8;border-radius:40%"></div>`;
+  if(p==='plate'||p==='bezel'){let s='';for(let r=0;r<4;r++)for(let c=0;c<12;c++){if(r===0&&(c===0||c===11))continue;
+   s+=`<div style="position:absolute;left:${ox+c*U+(p==='plate'?4:1.5)}px;top:${oy+r*U+(p==='plate'?4:1.5)}px;width:${U-(p==='plate'?8:3)}px;height:${U-(p==='plate'?8:3)}px;background:var(--bg);border-radius:${p==='plate'?1:3}px"></div>`}
+   if(p==='bezel')[0,11].forEach(c=>s+=`<div style="position:absolute;left:${ox+c*U+1.5}px;top:${oy+1.5}px;width:${U-3}px;height:${U-3}px;background:var(--bg);border-radius:50%"></div>`);return s}
+  return''}
+ const els=L.map((l,i)=>{const d=document.createElement('div');d.className='ly';d.style.background=l.c;d.style.opacity=l.o;
+  if(l.p==='knobs'||l.p==='caps'||l.p==='cells'){d.style.background='transparent';d.style.border=l.p==='cells'?'none':'none'}
+  if(l.p==='cells')d.style.background='transparent';
+  d.innerHTML=deco(l.p)+`<span class="lbl">${String(i).padStart(2,'0')} ${l.n}</span>`;rig.appendChild(d);
+  const li=document.createElement('li');li.innerHTML=`<span class="z">${l.z}</span><div>${l.n}<div class="d">${l.d}</div></div>`;ul.appendChild(li);
+  const sel=()=>{const on=!li.classList.contains('on');$$('.layer-list li,.ly').forEach(e=>e.classList.remove('on'));if(on){li.classList.add('on');d.classList.add('on')}box.classList.toggle('focus',on)};
+  d.onclick=li.onclick=sel;return d});
+ const k=1.4;function place(){const e=$('#explode').value/100;els.forEach((d,i)=>{d.style.transform=`translateZ(${L[i].h*k*3+e*i*42}px)`})}
+ $('#explode').oninput=place;place();})();
+
+// sensor cell diagram
+(()=>{const s=`<svg viewBox="0 0 400 300" xmlns="${NS}" font-family="JetBrains Mono,monospace" font-size="9">
+ <rect x="80" y="40" width="240" height="220" rx="10" fill="none" stroke="var(--faint)"/>
+ <text x="84" y="32" fill="var(--dim)" letter-spacing="2">1U · 19.05 mm</text>
+ <circle cx="200" cy="140" r="2.5" fill="var(--ink)"/><text x="208" y="136" fill="var(--dim)">轴心 / 磁铁</text>
+ <circle cx="200" cy="140" r="52" fill="none" stroke="var(--faint)" stroke-dasharray="2 4"/>
+ <g fill="none" stroke="var(--ink)" stroke-width=".8"><circle cx="160" cy="118" r="10"/><circle cx="222" cy="98" r="10"/></g>
+ <text x="134" y="98" fill="var(--dim)">热插拔座</text>
+ <rect x="192" y="188" width="16" height="10" rx="1" fill="var(--gold)"/>
+ <line x1="200" y1="143" x2="200" y2="186" stroke="var(--gold)" stroke-dasharray="3 3"/>
+ <path d="M200 160 l-4 -8 h8z" fill="var(--gold)"/>
+ <text x="214" y="196" fill="var(--gold)">TMR · 3.5 mm 南侧</text>
+ <text x="214" y="208" fill="var(--dim)">敏感轴指向轴心</text>
+ <rect x="236" y="212" width="12" height="12" rx="2" fill="none" stroke="var(--dim)"/><text x="252" y="222" fill="var(--dim)">WS2812B-2020</text>
+</svg>`;$('#cell').innerHTML='<span class="tag">单键布局</span><div style="margin-top:18px">'+s+'</div>'})();
+
+// bars on view
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+ if(e.target.querySelector('#bars'))$$('#bars .bar').forEach(b=>b.querySelector('.fill').style.width=Math.max(1,b.dataset.v/33*100)+'%');
+ io.unobserve(e.target)}}),{threshold:.15});
+$$('.reveal').forEach(e=>io.observe(e));
+
+// haptic dial
+(()=>{const cv=$('#dial'),g=cv.getContext('2d');let ang=0,vel=0,mode='detent',drag=false,last=0,flash=0;
+ const N=24,step=Math.PI*2/N;
+ $$('#modes button').forEach(b=>b.onclick=()=>{$$('#modes button').forEach(x=>x.classList.remove('on'));b.classList.add('on');mode=b.dataset.m;if(mode!=='smooth')ang=Math.round(ang/step)*step*0});
+ const pa=e=>{const r=cv.getBoundingClientRect();return Math.atan2(e.clientY-r.top-r.height/2,e.clientX-r.left-r.width/2)};
+ cv.onpointerdown=e=>{drag=true;last=pa(e);cv.setPointerCapture(e.pointerId)};
+ cv.onpointerup=cv.onpointercancel=()=>drag=false;
+ let prevDet=0;
+ cv.onpointermove=e=>{if(!drag)return;let a=pa(e),d=a-last;if(d>Math.PI)d-=2*Math.PI;if(d<-Math.PI)d+=2*Math.PI;last=a;
+  let gain=1;if(mode==='smooth')gain=.45;if(mode==='end'){const lim=Math.PI*.75;if((ang>lim&&d>0)||(ang<-lim&&d<0))gain=.06}
+  if(mode==='spring')gain=1/(1+Math.abs(ang)*1.4);
+  ang+=d*gain;vel=d*gain*60};
+ function frame(){const css=getComputedStyle(document.documentElement);const ink=css.getPropertyValue('--ink'),gold=css.getPropertyValue('--gold'),faint=css.getPropertyValue('--faint'),dim=css.getPropertyValue('--dim');
+  if(!drag){if(mode==='detent'){const t=Math.round(ang/step)*step;vel+=(t-ang)*90*.016;vel*=.78;ang+=vel*.016}
+   else if(mode==='spring'){vel+=-ang*40*.016;vel*=.86;ang+=vel*.016}
+   else if(mode==='end'){const lim=Math.PI*.75;if(Math.abs(ang)>lim){ang+=(Math.sign(ang)*lim-ang)*.25}vel*=.9;ang+=vel*.016*.2}
+   else{vel*=.94;ang+=vel*.016*.3}}
+  else if(mode==='detent'){const t=Math.round(ang/step)*step;ang+=(t-ang)*.18}
+  const det=Math.round(ang/step);if(mode==='detent'&&det!==prevDet){flash=1;prevDet=det;if(navigator.vibrate)try{navigator.vibrate(4)}catch(e){}}
+  flash*=.88;
+  const W=600,c=W/2;g.clearRect(0,0,W,W);
+  g.lineWidth=1;
+  // tick ring
+  const ticks=mode==='detent'?N:96;
+  for(let i=0;i<ticks;i++){const a=i/ticks*Math.PI*2-Math.PI/2;const big=mode==='detent'||i%8===0;
+   if(mode==='end'&&Math.abs(((a+Math.PI/2+Math.PI)%(2*Math.PI))-Math.PI)>Math.PI*.75)continue;
+   g.strokeStyle=big?dim:faint;g.beginPath();g.moveTo(c+Math.cos(a)*262,c+Math.sin(a)*262);g.lineTo(c+Math.cos(a)*(big?280:272),c+Math.sin(a)*(big?280:272));g.stroke()}
+  // knob body
+  g.strokeStyle=faint;g.beginPath();g.arc(c,c,230,0,7);g.stroke();
+  g.save();g.translate(c,c);g.rotate(ang);
+  for(let i=0;i<60;i++){const a=i/60*Math.PI*2;g.strokeStyle=faint;g.beginPath();g.moveTo(Math.cos(a)*212,Math.sin(a)*212);g.lineTo(Math.cos(a)*228,Math.sin(a)*228);g.stroke()}
+  g.fillStyle=gold;g.beginPath();g.arc(0,-180,6,0,7);g.fill();g.restore();
+  g.strokeStyle=gold;g.globalAlpha=flash;g.lineWidth=2;g.beginPath();g.arc(c,c,236,0,7);g.stroke();g.globalAlpha=1;g.lineWidth=1;
+  g.fillStyle=ink;g.font='200 64px Inter,sans-serif';g.textAlign='center';g.textBaseline='middle';
+  g.fillText(mode==='detent'?String(((det%N)+N)%N).padStart(2,'0'):Math.round(ang*180/Math.PI)+'°',c,c);
+  g.fillStyle=dim;g.font='400 15px JetBrains Mono,monospace';g.fillText({detent:'24 档',smooth:'阻尼',spring:'回弹',end:'± 135°'}[mode],c,c+52);
+  $('#readout').textContent=(ang*180/Math.PI).toFixed(1)+'°';
+  requestAnimationFrame(frame)}
+ frame();})();
+
+// pcb tabs
+$$('#pcbTabs button').forEach(b=>b.onclick=()=>{$$('#pcbTabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ $$('#pcbView img').forEach(i=>{i.classList.remove('on','stacked');if(b.dataset.l==='all')i.classList.add('stacked');else if(i.dataset.l===b.dataset.l)i.classList.add('on')})});
+</script>
+</body>
+</html>

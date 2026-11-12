@@ -1,0 +1,2567 @@
+[
+ {
+  "ref": "U100",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 9.525,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R100",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 12.625,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C100",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 6.425,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D100",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 9.525,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C200",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 17.725,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U101",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 28.575,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R101",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 31.675,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C101",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 25.475,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D101",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 28.575,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C201",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 20.375,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U102",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 47.625,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R102",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 50.725,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C102",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 44.525,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D102",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 47.625,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C202",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 55.825,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U103",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 66.675,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R103",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 63.575,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C103",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 69.775,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D103",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 66.675,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C203",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 74.875,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U104",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 85.725,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R104",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 88.825,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C104",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 82.625,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D104",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 85.725,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C204",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 77.525,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U105",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 104.775,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R105",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 107.875,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C105",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 101.675,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D105",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 104.775,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C205",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 112.975,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U106",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 123.825,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R106",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 126.925,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C106",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 120.725,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D106",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 123.825,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C206",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 132.025,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U107",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 142.875,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R107",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 145.975,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C107",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 139.775,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D107",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 142.875,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C207",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 134.675,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U108",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 161.925,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R108",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 165.025,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C108",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 158.825,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D108",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 161.925,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C208",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 170.125,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U109",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 180.975,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R109",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 184.075,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C109",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 177.875,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D109",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 180.975,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C209",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 189.175,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U110",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 200.025,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R110",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 203.125,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C110",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 196.925,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D110",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 200.025,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C210",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 191.825,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U111",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 219.075,
+  "y": 6.025,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R111",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 222.175,
+  "y": 7.225,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C111",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 215.975,
+  "y": 7.225,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D111",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 219.075,
+  "y": 4.825,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C211",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 227.275,
+  "y": 4.825,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U112",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 9.525,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R112",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 12.625,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C112",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 6.425,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D112",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 9.525,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C212",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 1.325,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U113",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 28.575,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R113",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 31.675,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C113",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 25.475,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D113",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 28.575,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C213",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 20.375,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U114",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 47.625,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R114",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 50.725,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C114",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 44.525,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D114",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 47.625,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C214",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 39.425,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U115",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 66.675,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R115",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 63.575,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C115",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 69.375,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D115",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 66.675,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C215",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 58.475,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U116",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 85.725,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R116",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 88.825,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C116",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 83.025,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D116",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 85.725,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C216",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 93.925,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U117",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 104.775,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R117",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 107.875,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C117",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 101.675,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D117",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 104.775,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C217",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 96.575,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U118",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 123.825,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R118",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 126.925,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C118",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 120.725,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D118",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 123.825,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C218",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 115.625,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U119",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 142.875,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R119",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 145.975,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C119",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 139.775,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D119",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 142.875,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C219",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 134.675,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U120",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 161.925,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R120",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 165.025,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C120",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 158.825,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D120",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 161.925,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C220",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 153.725,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U121",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 180.975,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R121",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 184.075,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C121",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 177.875,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D121",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 180.975,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C221",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 172.775,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U122",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 200.025,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R122",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 203.125,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C122",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 196.925,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D122",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 200.025,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C222",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 191.825,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U123",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 219.075,
+  "y": 32.075,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R123",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 222.175,
+  "y": 30.875,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C123",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 215.975,
+  "y": 30.875,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D123",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 219.075,
+  "y": 33.275,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C223",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 210.875,
+  "y": 33.275,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U124",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 9.525,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R124",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 12.625,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C124",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 6.425,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D124",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 9.525,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C224",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 1.325,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U125",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 28.575,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R125",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 31.675,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C125",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 25.475,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D125",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 28.575,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C225",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 36.775,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U126",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 47.625,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R126",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 50.725,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C126",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 44.525,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D126",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 47.625,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C226",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 39.425,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U127",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 66.675,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R127",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 63.575,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C127",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 69.775,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D127",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 66.675,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "U128",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 85.725,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R128",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 88.825,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C128",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 82.625,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D128",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 85.725,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C228",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 93.925,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U129",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 104.775,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R129",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 107.875,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C129",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 101.675,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D129",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 104.775,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C229",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 112.975,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U130",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 123.825,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R130",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 126.925,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C130",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 120.725,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D130",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 123.825,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C230",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 132.025,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U131",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 142.875,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R131",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 145.975,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C131",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 139.775,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D131",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 142.875,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C231",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 134.675,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U132",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 161.925,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R132",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 165.025,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C132",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 158.825,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D132",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 161.925,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C232",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 170.125,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U133",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 180.975,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R133",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 184.075,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C133",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 177.875,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D133",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 180.975,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C233",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 189.175,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U134",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 200.025,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R134",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 203.125,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C134",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 196.925,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D134",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 200.025,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C234",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 191.825,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U135",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 219.075,
+  "y": 44.125,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R135",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 222.175,
+  "y": 45.325,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C135",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 215.975,
+  "y": 45.325,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D135",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 219.075,
+  "y": 42.925,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C235",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 227.275,
+  "y": 42.925,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U136",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 28.575,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R136",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 31.675,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C136",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 25.475,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D136",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 28.575,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C236",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 36.775,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U137",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 47.625,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R137",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 50.725,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C137",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 44.525,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D137",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 47.625,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C237",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 39.425,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U138",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 66.675,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R138",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 63.575,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C138",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 69.775,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D138",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 66.675,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C238",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 58.475,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U139",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 85.725,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R139",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 88.825,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C139",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 82.625,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D139",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 85.725,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C239",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 77.525,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U140",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 104.775,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R140",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 107.875,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C140",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 101.675,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D140",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 104.775,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C240",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 96.575,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U141",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 123.825,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R141",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 126.925,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C141",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 120.725,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D141",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 123.825,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C241",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 132.025,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U142",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 142.875,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R142",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 145.975,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C142",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 139.775,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D142",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 142.875,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C242",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 134.675,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U143",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 161.925,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R143",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 165.025,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C143",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 158.825,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D143",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 161.925,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C243",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 170.125,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U144",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 180.975,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R144",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 184.075,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C144",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 177.875,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D144",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 180.975,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C244",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 172.775,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U145",
+  "value": "TMR2617S",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 200.025,
+  "y": 70.175,
+  "lcsc": "TMR2617S (MDT)"
+ },
+ {
+  "ref": "R145",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 203.125,
+  "y": 68.975,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "C145",
+  "value": "22n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 196.925,
+  "y": 68.975,
+  "lcsc": "C1532"
+ },
+ {
+  "ref": "D145",
+  "value": "WS2812B-2020",
+  "footprint": "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm",
+  "side": "F",
+  "x": 200.025,
+  "y": 71.375,
+  "lcsc": "C965555"
+ },
+ {
+  "ref": "C245",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "F",
+  "x": 191.825,
+  "y": 71.375,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U10",
+  "value": "CD74HC4067SM96",
+  "footprint": "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm",
+  "side": "B",
+  "x": 40.8,
+  "y": 38.1,
+  "lcsc": "C98457"
+ },
+ {
+  "ref": "C10",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 40.8,
+  "y": 43.7,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U11",
+  "value": "CD74HC4067SM96",
+  "footprint": "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm",
+  "side": "B",
+  "x": 117.0,
+  "y": 38.1,
+  "lcsc": "C98457"
+ },
+ {
+  "ref": "C11",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 117.0,
+  "y": 43.7,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U12",
+  "value": "CD74HC4067SM96",
+  "footprint": "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm",
+  "side": "B",
+  "x": 193.2,
+  "y": 38.1,
+  "lcsc": "C98457"
+ },
+ {
+  "ref": "C12",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 193.2,
+  "y": 43.7,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "U1",
+  "value": "MDBT50Q-1MV2",
+  "footprint": "RF_Module:Raytac_MDBT50Q",
+  "side": "B",
+  "x": 76.2,
+  "y": 38.05,
+  "lcsc": "C5118826"
+ },
+ {
+  "ref": "C1",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 67.8,
+  "y": 40.35,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "C2",
+  "value": "4u7",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 67.8,
+  "y": 38.05,
+  "lcsc": "C19666"
+ },
+ {
+  "ref": "C3",
+  "value": "4u7",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 63.3,
+  "y": 71.4,
+  "lcsc": "C19666"
+ },
+ {
+  "ref": "U6",
+  "value": "W25Q32JVSSIQ (optional)",
+  "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+  "side": "B",
+  "x": 97.6,
+  "y": 38.1,
+  "lcsc": "C179171"
+ },
+ {
+  "ref": "J1",
+  "value": "USB-C 16P",
+  "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+  "side": "B",
+  "x": 57.15,
+  "y": 76.15,
+  "lcsc": "C165948"
+ },
+ {
+  "ref": "U3",
+  "value": "USBLC6-2SC6",
+  "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+  "side": "B",
+  "x": 57.15,
+  "y": 67.7,
+  "lcsc": "C7519"
+ },
+ {
+  "ref": "R1",
+  "value": "5k1",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 52.15,
+  "y": 69.6,
+  "lcsc": "C25905"
+ },
+ {
+  "ref": "R2",
+  "value": "5k1",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 62.15,
+  "y": 69.6,
+  "lcsc": "C25905"
+ },
+ {
+  "ref": "D1",
+  "value": "B5819W",
+  "footprint": "Diode_SMD:D_SOD-123",
+  "side": "B",
+  "x": 66.2,
+  "y": 74.0,
+  "lcsc": "C8598"
+ },
+ {
+  "ref": "U4",
+  "value": "BQ24075RGT",
+  "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+  "side": "B",
+  "x": 76.25,
+  "y": 71.75,
+  "lcsc": "C15220"
+ },
+ {
+  "ref": "C4",
+  "value": "1u",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 78.3,
+  "y": 68.8,
+  "lcsc": "C15849"
+ },
+ {
+  "ref": "C5",
+  "value": "4u7",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 71.6,
+  "y": 72.4,
+  "lcsc": "C19666"
+ },
+ {
+  "ref": "C6",
+  "value": "4u7",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 80.7,
+  "y": 72.4,
+  "lcsc": "C19666"
+ },
+ {
+  "ref": "R3",
+  "value": "2k2",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 73.9,
+  "y": 68.8,
+  "lcsc": "C25879"
+ },
+ {
+  "ref": "R4",
+  "value": "1k5",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 80.3,
+  "y": 70.6,
+  "lcsc": "C25867"
+ },
+ {
+  "ref": "R5",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 72.0,
+  "y": 70.6,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "R6",
+  "value": "10k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 74.4,
+  "y": 74.6,
+  "lcsc": "C25744"
+ },
+ {
+  "ref": "U5",
+  "value": "XC6206P332MR",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 89.6,
+  "y": 73.8,
+  "lcsc": "C5446"
+ },
+ {
+  "ref": "C7",
+  "value": "1u",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 93.4,
+  "y": 74.7,
+  "lcsc": "C15849"
+ },
+ {
+  "ref": "D2",
+  "value": "B5819W",
+  "footprint": "Diode_SMD:D_SOD-123",
+  "side": "B",
+  "x": 95.25,
+  "y": 70.9,
+  "lcsc": "C8598"
+ },
+ {
+  "ref": "TP1",
+  "value": "pad QI5V",
+  "footprint": "solder pad 1.5mm",
+  "side": "B",
+  "x": 97.6,
+  "y": 74.2,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP2",
+  "value": "pad GND",
+  "footprint": "solder pad 1.5mm",
+  "side": "B",
+  "x": 100.0,
+  "y": 74.2,
+  "lcsc": "-"
+ },
+ {
+  "ref": "Q1",
+  "value": "AO3401A",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 110.4,
+  "y": 73.7,
+  "lcsc": "C15127"
+ },
+ {
+  "ref": "R7",
+  "value": "100k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 110.4,
+  "y": 70.6,
+  "lcsc": "C25741"
+ },
+ {
+  "ref": "C8",
+  "value": "1u",
+  "footprint": "Capacitor_SMD:C_0603_1608Metric",
+  "side": "B",
+  "x": 111.4,
+  "y": 68.6,
+  "lcsc": "C15849"
+ },
+ {
+  "ref": "Q3",
+  "value": "AO3401A",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 169.0,
+  "y": 73.7,
+  "lcsc": "C15127"
+ },
+ {
+  "ref": "Q4",
+  "value": "2N7002",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 174.0,
+  "y": 73.7,
+  "lcsc": "C8545"
+ },
+ {
+  "ref": "R9",
+  "value": "100k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 171.5,
+  "y": 70.6,
+  "lcsc": "C25741"
+ },
+ {
+  "ref": "R12",
+  "value": "100k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 175.6,
+  "y": 70.6,
+  "lcsc": "C25741"
+ },
+ {
+  "ref": "C9",
+  "value": "10u",
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "side": "B",
+  "x": 171.5,
+  "y": 68.6,
+  "lcsc": "C15850"
+ },
+ {
+  "ref": "J4",
+  "value": "BAT (JST-SH 2P)",
+  "footprint": "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",
+  "side": "B",
+  "x": 133.35,
+  "y": 72.6,
+  "lcsc": "C160402"
+ },
+ {
+  "ref": "R10",
+  "value": "1M",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 128.4,
+  "y": 73.6,
+  "lcsc": "C26083"
+ },
+ {
+  "ref": "R11",
+  "value": "1M",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 128.4,
+  "y": 72.2,
+  "lcsc": "C26083"
+ },
+ {
+  "ref": "C12",
+  "value": "100n",
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "side": "B",
+  "x": 128.4,
+  "y": 70.8,
+  "lcsc": "C1525"
+ },
+ {
+  "ref": "Q2",
+  "value": "AO3401A",
+  "footprint": "Package_TO_SOT_SMD:SOT-23",
+  "side": "B",
+  "x": 148.4,
+  "y": 73.7,
+  "lcsc": "C15127"
+ },
+ {
+  "ref": "R8",
+  "value": "100k",
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "side": "B",
+  "x": 148.4,
+  "y": 70.6,
+  "lcsc": "C25741"
+ },
+ {
+  "ref": "J2",
+  "value": "FFC 14P 0.5mm",
+  "footprint": "Connector_FFC-FPC:Hirose_FH12-14S-0.5SH_1x14-1MP_P0.50mm_Horizontal",
+  "side": "B",
+  "x": 38.15,
+  "y": 72.3,
+  "lcsc": "C11084"
+ },
+ {
+  "ref": "C20",
+  "value": "22u",
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "side": "B",
+  "x": 28.85,
+  "y": 74.4,
+  "lcsc": "C45783"
+ },
+ {
+  "ref": "J3",
+  "value": "FFC 14P 0.5mm",
+  "footprint": "Connector_FFC-FPC:Hirose_FH12-14S-0.5SH_1x14-1MP_P0.50mm_Horizontal",
+  "side": "B",
+  "x": 190.55,
+  "y": 72.3,
+  "lcsc": "C11084"
+ },
+ {
+  "ref": "C21",
+  "value": "22u",
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "side": "B",
+  "x": 199.85,
+  "y": 74.4,
+  "lcsc": "C45783"
+ },
+ {
+  "ref": "TP10",
+  "value": "pad GND",
+  "footprint": "solder pad 1.6mm",
+  "side": "B",
+  "x": 111.00000000000001,
+  "y": 3.0,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP11",
+  "value": "pad +3V3",
+  "footprint": "solder pad 1.6mm",
+  "side": "B",
+  "x": 113.20000000000002,
+  "y": 3.0,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP12",
+  "value": "pad SCL",
+  "footprint": "solder pad 1.6mm",
+  "side": "B",
+  "x": 115.4,
+  "y": 3.0,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP13",
+  "value": "pad SDA",
+  "footprint": "solder pad 1.6mm",
+  "side": "B",
+  "x": 117.60000000000001,
+  "y": 3.0,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP20",
+  "value": "pad SWDIO",
+  "footprint": "solder pad 1.3mm",
+  "side": "B",
+  "x": 91.0,
+  "y": 43.4,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP21",
+  "value": "pad SWCLK",
+  "footprint": "solder pad 1.3mm",
+  "side": "B",
+  "x": 93.4,
+  "y": 43.4,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP22",
+  "value": "pad RESET",
+  "footprint": "solder pad 1.3mm",
+  "side": "B",
+  "x": 95.8,
+  "y": 43.4,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP23",
+  "value": "pad GND",
+  "footprint": "solder pad 1.3mm",
+  "side": "B",
+  "x": 98.2,
+  "y": 43.4,
+  "lcsc": "-"
+ },
+ {
+  "ref": "TP24",
+  "value": "pad +3V3",
+  "footprint": "solder pad 1.3mm",
+  "side": "B",
+  "x": 100.6,
+  "y": 43.4,
+  "lcsc": "-"
+ }
+]
